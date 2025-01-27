@@ -54,14 +54,14 @@ print(libreria[libro1.__hash__()])
 print(libreria)
 
 '''
-Dada una lista de nombres, crea un conjunto para eliminar duplicados.
+5. Dada una lista de nombres, crea un conjunto para eliminar duplicados.
 Muestra la lista original y la lista sin duplicados
 '''
 nombres = ["Nahuel", "Laura", "Luis", "Sara", "Manu", "Nahuel", "Isa"]
 print(list(set(nombres)))
 
 '''
-Crea dos conjuntos registrados y aprobados. Usa intersección para obtener los
+6. Crea dos conjuntos registrados y aprobados. Usa intersección para obtener los
 alumnos que están en ambas listas y diferencia para los registrados que no
 aprobaron.
 Muestra ambos resultados.
@@ -72,7 +72,7 @@ print(list(set(alumnosRegistrados).intersection(set(alumnosAprobados))))
 print((list(set(alumnosRegistrados).difference(set(alumnosAprobados)))))
 
 '''
-Crea una clase Calculadora con métodos estáticos para sumar, restar,
+7. Crea una clase Calculadora con métodos estáticos para sumar, restar,
 multiplicar y dividir.
 Llama a los métodos directamente desde la clase sin crear un objeto.
 '''
@@ -82,8 +82,22 @@ print(Calculadora.multiplicar(Calculadora(2, 5)))
 print(Calculadora.dividir(Calculadora(5, 2)))
 
 '''
-Implementa una clase Agenda con un diccionario para almacenar contactos
+8. Implementa una clase Agenda con un diccionario para almacenar contactos
 (nombre: teléfono). Crea métodos para agregar, eliminar y buscar contactos.
 Agrega varios contactos, búscalos y elimínalos.
 '''
 
+
+
+'''
+9. Crea una clase Empleado con atributos nombre y salario, y investiga __lt__
+para comparar empleados por salario.
+Ordena una lista de empleados por salario
+'''
+
+'''
+Crea una clase Texto que almacene un texto. Implementa un método que
+cuente las palabras únicas usando un conjunto, y otro que devuelva un
+diccionario con la frecuencia de cada palabra.
+Usa ambos métodos con un párrafo y muestra los resultados.
+'''

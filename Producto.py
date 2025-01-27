@@ -3,3 +3,7 @@ class Producto:
         self.nombre = nombre
         self.precio = precio
 
+
+    def __hash__(self):
+        return hash(self.nombre)
+
