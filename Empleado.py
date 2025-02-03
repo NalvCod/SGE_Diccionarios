@@ -6,3 +6,6 @@ class Empleado(Persona):
 
     def imprimir_salario(self):
         print(f"El salario es: {self.salario}")
+
+    def __lt__(self, other):
+        return 'a'

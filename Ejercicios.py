@@ -8,6 +8,8 @@ from Empleado import Empleado
 from Producto import Producto
 from Libro import Libro
 from Calculadora import Calculadora
+from Agenda import Agenda
+from Texto import Texto
 
 p1 = Persona("Nahuel", 25)
 p1.saludar()
@@ -86,14 +88,23 @@ print(Calculadora.dividir(Calculadora(5, 2)))
 (nombre: teléfono). Crea métodos para agregar, eliminar y buscar contactos.
 Agrega varios contactos, búscalos y elimínalos.
 '''
+miAgenda = Agenda()
 
-
+miAgenda.agregarContactoAgenda('Nahuel', "650810357")
+miAgenda.agregarContactoAgenda('Luis', "669373835")
+print(miAgenda)
+miAgenda.eliminarContactoAgenda('Luis')
+miAgenda.buscarContactoAgenda('Nahuel')
 
 '''
 9. Crea una clase Empleado con atributos nombre y salario, y investiga __lt__
 para comparar empleados por salario.
 Ordena una lista de empleados por salario
 '''
+listaEmpleados = {Empleado('Nahuel', 20, 650),
+                  Empleado('Jorge', 19, 500),
+                  Empleado('Pepe', 25, 1200)}
+
 
 '''
 Crea una clase Texto que almacene un texto. Implementa un método que
@@ -101,3 +112,6 @@ cuente las palabras únicas usando un conjunto, y otro que devuelva un
 diccionario con la frecuencia de cada palabra.
 Usa ambos métodos con un párrafo y muestra los resultados.
 '''
+texto = Texto('No se muy bien lo bien que quiero bien pasrk bien hola pues bueno no se quiero')
+texto2 = Texto('Muy bien muy bien menos bien mas mal mas menos menos peor bien hola adios hola')
+
